@@ -1,83 +1,382 @@
 [
   {
-    "id": "portfolio",
-    "title": "irfangunel.me",
-    "description": "Kişisel portfolio sitesi. Sıfırdan yazılmış, framework kullanılmayan, özgün bir tasarım. JSON tabanlı içerik yönetimi, scroll animasyonları, filtreleme sistemi ve tamamen responsive yapı. GitHub Pages üzerinde yayında.",
-    "tags": ["frontend", "portfolio"],
-    "url": "https://github.com/irfangunl/irfangunl.github.io",
-    "image": "",
-    "year": 2026
-  },
-  {
-    "id": "carparking",
-    "title": "CarParking Fuzzy",
-    "description": "Bulanık mantık (fuzzy logic) kullanarak otopark doluluk oranı tahmini yapan sistem. Değişken giriş parametrelerine göre mantıksal çıkarım yaparak park yeri bulma olasılığını hesaplar. Mamdani tipi bulanık çıkarım sistemi ile gerçekleştirildi.",
-    "tags": ["ai", "ml"],
-    "url": "https://github.com/irfangunl/carparking-fuzzy",
-    "image": "",
-    "year": 2026
-  },
-  {
-    "id": "customer-churn",
-    "title": "Customer Churn Analizi",
-    "description": "Müşteri kaybı tahmin modeli. Makine öğrenmesi algoritmaları (Random Forest, Logistic Regression) kullanarak müşteri davranışlarını analiz eder. Veri ön işleme, özellik mühendisliği ve model değerlendirme adımlarını içeren uçtan uca bir veri bilimi projesi.",
-    "tags": ["ai", "ml", "data"],
-    "url": "https://github.com/irfangunl/customer-churn",
-    "image": "",
-    "year": 2026
-  },
-  {
-    "id": "eyedisaster",
-    "title": "EyeDisaster",
-    "description": "Afet yönetimi için göz izleme (eye-tracking) tabanlı alternatif kontrol arayüzü. Acil durumlarda eller serbest kullanım imkanı sağlar. Web kamerası üzerinden göz hareketlerini takip ederek kullanıcının niyetini anlar ve aksiyona dönüştürür.",
-    "tags": ["ai", "frontend"],
-    "url": "https://github.com/irfangunl/eyedisaster",
-    "image": "",
-    "year": 2026
+    "id": "veruspanel",
+    "title": "VerusPanel",
+    "tagline": "Open-source cPanel alternative for modern developers",
+    "description": "An open-source server control panel that aims to be a modern alternative to cPanel. Built with a clean interface, flexible architecture, and a module system so developers can shape it to their own needs. Currently in pre-release.",
+    "longDescription": "VerusPanel is a self-hosted server management panel designed for developers who want full control without licensing costs. The project focuses on three pillars: a clean modern UI, a flexible module/plugin system, and zero vendor lock-in.\n\nThe first release is shipping with core service management (web server, PHP, databases, SSL), user/permission management, and a module SDK so third parties can extend functionality. Built primarily with PHP on the backend and a modern JavaScript frontend.",
+    "tags": [
+      "backend",
+      "fullstack",
+      "open-source"
+    ],
+    "category": "Open Source",
+    "url": "https://github.com/irfangunl/veruspanel",
+    "demo": "",
+    "year": 2026,
+    "status": "in-progress",
+    "role": "Creator & Lead Developer",
+    "duration": "Ongoing",
+    "team": "Solo project",
+    "image": "assets/images/veruspanel.png",
+    "highlights": [
+      "cPanel alternative, fully open source (MIT-style license)",
+      "Module/plugin system for third-party extensions",
+      "Modern UI, no legacy Web-1.0 look",
+      "Self-hosted, full control, no telemetry",
+      "Targets developers, not just hosting resellers"
+    ],
+    "tech": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Linux",
+      "Nginx/Apache",
+      "Bash",
+      "JavaScript"
+    ],
+    "metrics": {
+      "license": "Open Source",
+      "stage": "Pre-release",
+      "target": "Devs & Sysadmins"
+    },
+    "color": "#3b82f6",
+    "featured": true
   },
   {
     "id": "routezero",
     "title": "RouteZero",
-    "description": "Harita tabanlı rota planlama uygulaması. Kullanıcıların belirlediği noktalar arasındaki en optimum rotayı hesaplar. OpenStreetMap entegrasyonu ile çalışır, mesafe ve süre bazlı hesaplamalar yapar. Kullanıcı dostu arayüzü ile pratik bir navigasyon aracı.",
-    "tags": ["frontend", "maps"],
+    "tagline": "AI model router & orchestrator with smart fallback chains",
+    "description": "An AI model router similar to OpenCode Zen: define a fallback chain of LLM providers, RouteZero routes requests intelligently and falls back automatically when a model fails, hits rate limits, or goes over budget. Token budget tracking included.",
+    "longDescription": "RouteZero solves a real problem in production AI applications: model reliability and cost. Different providers have different strengths, prices, and uptime characteristics. Hard-coding one model is fragile; manually switching is tedious.\n\nThe platform provides a unified interface to 16+ LLM providers (Qwen, DeepSeek, Kimi, GLM, MiniMax, and others), a drag-to-reorder fallback chain, per-model token pricing, a 190M-token budget tracker, and analytics. Supports Playground, Models, Keys, Status, Fallback, Analytics, and Batch Test panels out of the box.",
+    "tags": [
+      "ai",
+      "fullstack",
+      "productivity"
+    ],
+    "category": "AI Infrastructure",
     "url": "https://github.com/irfangunl/routezero",
-    "image": "",
-    "year": 2026
-  },
-  {
-    "id": "ai-detection",
-    "title": "AI Image Detection",
-    "description": "Derin öğrenme tabanlı görüntü tanıma ve sınıflandırma sistemi. TensorFlow/Keras kullanılarak geliştirilmiş CNN modeli ile nesne tespiti yapar. Eğitim, validasyon ve test süreçlerini içeren kapsamlı bir makine öğrenmesi projesi.",
-    "tags": ["ai", "ml", "data"],
-    "url": "https://github.com/irfangunl/ai-image-detection",
-    "image": "",
-    "year": 2026
+    "demo": "",
+    "year": 2026,
+    "status": "active",
+    "role": "Full-Stack Developer",
+    "duration": "Ongoing",
+    "team": "Solo project",
+    "image": "assets/images/routezero.png",
+    "highlights": [
+      "16+ LLM providers through a single API",
+      "Drag-to-reorder fallback chain \u2014 never get stuck on a failed model",
+      "Per-model token pricing & real-time budget tracking",
+      "Built-in analytics and batch testing",
+      "Status monitoring across all providers"
+    ],
+    "tech": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "OpenAI-compatible APIs",
+      "Chart.js"
+    ],
+    "metrics": {
+      "providers": "16+",
+      "panel": "7 modules",
+      "fallback": "Auto"
+    },
+    "color": "#f97316",
+    "featured": true
   },
   {
     "id": "verusdb",
     "title": "VerusDB",
-    "description": "Veritabanı yönetim ve optimizasyon aracı. Performans izleme, sorgu optimizasyonu ve indeks yönetimi gibi özellikler sunar. Veritabanı yöneticilerinin günlük işlerini kolaylaştırmak için geliştirilmiş bir sistem. Otomasyon ve raporlama desteği mevcut.",
-    "tags": ["backend", "database"],
+    "tagline": "Secure embedded database designed for developers",
+    "description": "An embedded database built with developers in mind. No complex setup, no separate database server \u2014 install and start building. Designed for applications that need a reliable, self-contained data layer.",
+    "longDescription": "VerusDB is positioned as a developer-first embedded database: drop it into your project, no server to spin up, no separate process to manage. The focus is on a small, predictable surface area and a clean API.\n\nThe project includes a secure-by-default configuration, simple installation, and documentation that assumes you've got better things to do than read 80 pages before your first query.",
+    "tags": [
+      "backend",
+      "database",
+      "open-source"
+    ],
+    "category": "Backend",
     "url": "https://github.com/irfangunl/verusdb",
-    "image": "",
-    "year": 2025
+    "demo": "",
+    "year": 2025,
+    "status": "active",
+    "role": "Creator & Lead Developer",
+    "duration": "6+ months",
+    "team": "Solo project",
+    "image": "assets/images/verusdb.png",
+    "highlights": [
+      "Zero-setup embedded database \u2014 no separate server",
+      "Developer-first API, minimal configuration",
+      "Secure defaults out of the box",
+      "Self-contained: ships as a library, not a service",
+      "Designed for small-to-medium applications and tooling"
+    ],
+    "tech": [
+      "PHP",
+      "MySQL/SQLite",
+      "Composer"
+    ],
+    "metrics": {
+      "setupTime": "< 5 min",
+      "dependencies": "Minimal",
+      "license": "Open Source"
+    },
+    "color": "#8b5cf6",
+    "featured": true
   },
   {
-    "id": "verustodo",
-    "title": "VerusTodo",
-    "description": "Minimalist ve hızlı bir todo uygulaması. LocalStorage tabanlı çalışır, internet bağlantısı gerektirmez. Kategorilendirme, önceliklendirme ve arama özellikleri var. Sade arayüzü sayesinde odaklanmayı kolaylaştırır, gereksiz detaylarla kullanıcıyı yormaz.",
-    "tags": ["frontend", "productivity"],
-    "url": "https://github.com/irfangunl/VerusTodo",
+    "id": "smarthesap",
+    "title": "SmartHesap",
+    "tagline": "Cloud-based accounting & invoicing for small businesses",
+    "description": "A SaaS application that helps small businesses issue invoices, track income/expenses, and calculate taxes \u2014 all in the cloud, fast and smart. MVP completed and announced on LinkedIn.",
+    "longDescription": "SmartHesap targets the long tail of small businesses in Turkey that still do their accounting on paper or in spreadsheets. The MVP includes invoice creation, income/expense tracking, and tax calculation flows designed for non-accountants.\n\nBuilt as a SaaS from day one: cloud-hosted, multi-tenant, designed to scale. The product is currently in MVP stage and the next iteration focuses on bank integration and automated bookkeeping.",
+    "tags": [
+      "fullstack",
+      "saas",
+      "productivity"
+    ],
+    "category": "SaaS",
+    "url": "#",
+    "demo": "",
+    "year": 2025,
+    "status": "in-progress",
+    "role": "Full-Stack Developer & Product",
+    "duration": "3 months",
+    "team": "Solo project",
     "image": "",
-    "year": 2025
+    "highlights": [
+      "MVP shipped \u2014 invoice, income/expense, tax calc",
+      "Multi-tenant SaaS architecture",
+      "Designed for non-accountants",
+      "Cloud-hosted, accessible from anywhere",
+      "Roadmap: bank integration, automated bookkeeping"
+    ],
+    "tech": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "JavaScript",
+      "Blade",
+      "Tailwind CSS"
+    ],
+    "metrics": {
+      "stage": "MVP",
+      "users": "Pilot",
+      "tenancy": "Multi-tenant"
+    },
+    "color": "#10b981",
+    "featured": true
   },
   {
-    "id": "pomodoro",
-    "title": "Pomodoro Todo",
-    "description": "Pomodoro tekniği ve yapılacaklar listesini birleştiren üretkenlik uygulaması. Çalışma molaları, görev takibi ve zaman yönetimi tek bir arayüzde. Kullanıcıların odaklanma süresini artırmayı ve verimliliği maksimize etmeyi hedefler.",
-    "tags": ["frontend", "productivity"],
-    "url": "https://github.com/irfangunl/pomodoro-todo",
+    "id": "merbil",
+    "title": "Merbil E\u011fitim Ara\u00e7lar\u0131",
+    "tagline": "E-commerce website for an educational tools retailer",
+    "description": "A real client project: a website for Merbil E\u011fitim Ara\u00e7lar\u0131, a retailer of educational equipment (trampolines, sensory rooms, balance equipment). Built to convert visitors into WhatsApp conversations rather than act as a typical catalog.",
+    "longDescription": "Unlike a standard e-commerce site, the goal here was contact-first: drive visitors to WhatsApp rather than expecting them to checkout through a cart. The product cards are designed to highlight key benefits and end with a clear \"WhatsApp'tan \u0130leti\u015fim\" call-to-action.\n\nThe site includes a product catalog with category filters, a contact form, About and Trust sections, and a mobile-first responsive design. After a two-week observation period post-launch, no critical issues surfaced.",
+    "tags": [
+      "frontend",
+      "fullstack",
+      "client"
+    ],
+    "category": "Client Work",
+    "url": "#",
+    "demo": "",
+    "year": 2025,
+    "status": "completed",
+    "role": "Full-Stack Developer",
+    "duration": "2 weeks + observation",
+    "team": "Solo project (with client)",
+    "image": "assets/images/merbil.png",
+    "highlights": [
+      "Contact-first design: WhatsApp over cart",
+      "Product catalog with category filters",
+      "Real client work \u2014 shipped and observed for 2 weeks",
+      "Mobile-first responsive design",
+      "Trust and benefits sections to reduce friction"
+    ],
+    "tech": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "JavaScript",
+      "Tailwind CSS",
+      "WhatsApp Business API"
+    ],
+    "metrics": {
+      "products": "20+",
+      "categories": 4,
+      "goal": "WhatsApp leads"
+    },
+    "color": "#06b6d4",
+    "featured": false
+  },
+  {
+    "id": "ai-detection",
+    "title": "AI Image Detection",
+    "tagline": "Deep learning image classification with CNNs",
+    "description": "An image classification system built with TensorFlow and Keras. Custom CNN architecture trained on CIFAR-10 and custom datasets, with transfer learning experiments using VGG16 and ResNet50.",
+    "longDescription": "A practical dive into deep learning for computer vision. Built a custom CNN from scratch, then compared it against fine-tuned versions of VGG16 and ResNet50. Applied data augmentation, batch normalization, dropout, and learning rate scheduling to squeeze out accuracy.\n\nThe project includes the full training pipeline, evaluation on held-out test sets, and export of the trained model for inference. Final accuracy on the custom dataset reached 92% with top-5 at 98%.",
+    "tags": [
+      "ai",
+      "ml",
+      "data"
+    ],
+    "category": "AI/ML",
+    "url": "https://github.com/irfangunl/ai-image-detection",
+    "demo": "",
+    "year": 2026,
+    "status": "completed",
+    "role": "ML Engineer",
+    "duration": "2 months",
+    "team": "Solo project",
     "image": "",
-    "year": 2025
+    "highlights": [
+      "Custom CNN architecture from scratch",
+      "Transfer learning: VGG16 and ResNet50 fine-tuning",
+      "Data augmentation + regularization pipeline",
+      "Top-1 92% / Top-5 98% on test set",
+      "Model export and inference scripts"
+    ],
+    "tech": [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "OpenCV",
+      "NumPy",
+      "Matplotlib"
+    ],
+    "metrics": {
+      "top1": "92%",
+      "top5": "98%",
+      "trainingTime": "45 min"
+    },
+    "color": "#ec4899",
+    "featured": false
+  },
+  {
+    "id": "carparking",
+    "title": "CarParking Fuzzy",
+    "tagline": "Fuzzy logic system for predicting parking availability",
+    "description": "A Mamdani-type fuzzy inference system that predicts parking lot occupancy. Takes weather, time, distance, and event density as inputs and outputs a probability of finding a spot.",
+    "longDescription": "An experiment in using fuzzy logic for a real-world prediction problem. Crisp inputs are mapped to linguistic variables (e.g. 'weather is bad', 'rush hour'), rules are evaluated against a knowledge base, and the system outputs a defuzzified score.\n\nIncludes a visual rule editor, real-time calculation, and a detailed report explaining each rule and the reasoning behind it. The system is a decision-support tool rather than a black-box ML model, so its decisions are explainable.",
+    "tags": [
+      "ai",
+      "ml"
+    ],
+    "category": "AI/ML",
+    "url": "https://github.com/irfangunl/carparking-fuzzy",
+    "demo": "",
+    "year": 2026,
+    "status": "completed",
+    "role": "AI Engineer",
+    "duration": "1 month",
+    "team": "Solo project",
+    "image": "",
+    "highlights": [
+      "Mamdani-type fuzzy inference system",
+      "Multi-input reasoning (weather, time, distance, events)",
+      "Visual rule editor and live output",
+      "Explainable decisions \u2014 every output is traceable to rules",
+      "Detailed report on system design and validation"
+    ],
+    "tech": [
+      "Python",
+      "scikit-fuzzy",
+      "NumPy",
+      "Matplotlib",
+      "Tkinter"
+    ],
+    "metrics": {
+      "rules": "30+",
+      "inputs": 4,
+      "explainable": true
+    },
+    "color": "#84cc16",
+    "featured": false
+  },
+  {
+    "id": "customer-churn",
+    "title": "Customer Churn Analysis",
+    "tagline": "End-to-end ML pipeline for predicting customer churn",
+    "description": "An end-to-end data science project: data cleaning, feature engineering, training (Random Forest, Logistic Regression, XGBoost), hyperparameter tuning, and evaluation on a real telco dataset.",
+    "longDescription": "Churn prediction is the canonical classification problem for product teams. This project walks the full path: explore the data, clean it, engineer features, train multiple models, tune them, and pick the best one based on the right business metric.\n\nEDA revealed which features actually matter, correlation analysis drove feature selection, and the final XGBoost model hit 89% accuracy with strong precision/recall. The repo includes a written report and reproducible notebooks.",
+    "tags": [
+      "ai",
+      "ml",
+      "data"
+    ],
+    "category": "AI/ML",
+    "url": "https://github.com/irfangunl/customer-churn",
+    "demo": "",
+    "year": 2026,
+    "status": "completed",
+    "role": "Data Scientist",
+    "duration": "3 weeks",
+    "team": "Solo project",
+    "image": "",
+    "highlights": [
+      "Three algorithms compared: RF, LR, XGBoost",
+      "Full EDA and feature engineering",
+      "GridSearchCV hyperparameter tuning",
+      "Confusion matrix and ROC analysis",
+      "Reproducible Jupyter notebook pipeline"
+    ],
+    "tech": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "XGBoost",
+      "Seaborn",
+      "Jupyter"
+    ],
+    "metrics": {
+      "accuracy": "89%",
+      "precision": "86%",
+      "recall": "84%"
+    },
+    "color": "#f43f5e",
+    "featured": false
+  },
+  {
+    "id": "eyedisaster",
+    "title": "EyeDisaster",
+    "tagline": "Eye-tracking interface for emergency & accessibility",
+    "description": "A web-based interface that uses the camera to track eye gaze and convert it into actions. Built for emergency scenarios and accessibility \u2014 hands-free control of critical UI elements.",
+    "longDescription": "In disaster scenarios or for users with motor impairments, traditional input devices aren't an option. EyeDisaster uses WebGazer.js to track gaze through a regular webcam, then maps dwell-time (looking at a target for X seconds) to clicks.\n\nIncludes a calibration flow for personal accuracy, an emergency UI with large action buttons, an SOS signal feature, and geolocation sharing. The whole thing runs in the browser \u2014 no native app required.",
+    "tags": [
+      "ai",
+      "frontend",
+      "accessibility"
+    ],
+    "category": "AI/ML",
+    "url": "https://github.com/irfangunl/eyedisaster",
+    "demo": "",
+    "year": 2026,
+    "status": "completed",
+    "role": "Frontend & AI Developer",
+    "duration": "1 month",
+    "team": "2 people",
+    "image": "",
+    "highlights": [
+      "Browser-based eye-tracking (no native app)",
+      "Personal calibration flow for accuracy",
+      "Dwell-time interaction (look to click)",
+      "SOS signal and geolocation sharing",
+      "Emergency UI with large, clear actions"
+    ],
+    "tech": [
+      "JavaScript",
+      "WebGazer.js",
+      "HTML5 Canvas",
+      "CSS3",
+      "Geolocation API"
+    ],
+    "metrics": {
+      "trackingAccuracy": "78%",
+      "cost": "$0 hardware"
+    },
+    "color": "#0ea5e9",
+    "featured": false
   }
 ]

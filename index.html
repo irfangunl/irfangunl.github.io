@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>İrfan Günel — yazılım geliştirici</title>
-  <meta name="description" content="İrfan Günel'in portfolio sitesi. Yazılım, yapay zeka ve web projeleri.">
+  <title>İrfan Günel — Software Engineer Intern at Miote</title>
+  <meta name="description" content="Software engineering intern at Miote, soon-to-graduate IT student, building open-source tools, AI experiments, and full-stack apps from Mersin.">
   <link rel="preconnect" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800|jetbrains-mono:400,500" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23c9a96e'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%230a0a0a' font-family='Inter,sans-serif' font-weight='700'>i</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M16 4L26 9v14L16 28 6 23V9l10-5z' fill='%23c9a96e'/><circle cx='16' cy='16' r='3' fill='%230a0a0a'/></svg>">
 </head>
 <body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise" aria-hidden="true"></div>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <span class="nav-logo-mark">i</span>
-        <span>İrfan Günel</span>
+        <span class="nav-logo-name"><span>İrfan</span> Günel</span>
       </a>
       <div class="nav-links">
-        <a href="#about">Hakkımda</a>
-        <a href="#skills">Yetenekler</a>
-        <a href="#projects">Projeler</a>
-        <a href="#contact">İletişim</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#work">Work</a>
+        <a href="#contact" class="nav-cta">Get in touch</a>
       </div>
-      <button class="nav-toggle" aria-label="Menü">
+      <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -36,34 +42,147 @@
     <div class="hero-bg">
       <div class="hero-orb hero-orb--1"></div>
       <div class="hero-orb hero-orb--2"></div>
-      <div class="hero-grid"></div>
     </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        Açık kaynak geliştirici
-      </div>
-      <h1 class="hero-title">
-        <span class="hero-title-line">İrfan</span>
-        <span class="hero-title-line hero-title-line--accent">Günel</span>
-      </h1>
-      <p class="hero-sub">
-        Yapay zeka, web teknolojileri ve veri bilimiyle uğraşan bir yazılım geliştirici.
-        Temiz kod, özgün tasarım ve çözüm odaklı düşünce — işte benim tarzım.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">
-          Projeler
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-        <a href="#contact" class="btn btn-outline">
-          İletişim
-        </a>
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <div class="hero-meta">
+            Software Engineering Intern @ Miote
+            <span class="hero-meta-divider"></span>
+            Mersin, TR
+            <span class="hero-meta-divider"></span>
+            Graduating soon
+          </div>
+
+          <h1 class="hero-title">
+            I build tools that
+            <span class="hero-title-typed" id="typedWord"></span
+            ><span class="hero-title-cursor">_</span>
+            developers actually use.
+          </h1>
+
+          <p class="hero-sub">
+            Hi, I'm <strong>İrfan</strong>. PHP/Laravel developer,
+            open&#8209;source maintainer, AI experimenter.
+            I ship things real people use.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-primary">
+              <span>See my work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Let's work together</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <span class="hero-stat">9&thinsp;public&thinsp;projects</span>
+            <span class="hero-stat-divider"></span>
+            <span class="hero-stat">2+&thinsp;years&thinsp;building</span>
+            <span class="hero-stat-divider"></span>
+            <span class="hero-stat">4&thinsp;OSS&thinsp;releases</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-snip" aria-hidden="true">
+            <div class="code-snip-line">
+              <span class="cs-ln">1</span>
+              <span class="cs-cm">// routes/web.php</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">2</span>
+              <span class="cs-kw">Route</span>::<span class="cs-fn">get</span>(<span class="cs-str">'/dashboard'</span>, [<span class="cs-cls">DashboardController</span>::<span class="cs-kw">class</span>, <span class="cs-str">'index'</span>])<span class="cs-op">;</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">3</span>
+              <span class="cs-indent">  </span>-><span class="cs-fn">middleware</span>([<span class="cs-str">'auth'</span>, <span class="cs-str">'verified'</span>])<span class="cs-op">;</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">4</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">5</span>
+              <span class="cs-kw">Route</span>::<span class="cs-fn">resource</span>(<span class="cs-str">'projects'</span>, <span class="cs-cls">ProjectController</span>::<span class="cs-kw">class</span>)
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">6</span>
+              <span class="cs-indent">  </span>-><span class="cs-fn">middleware</span>([<span class="cs-str">'auth'</span>])<span class="cs-op">;</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">7</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">8</span>
+              <span class="cs-kw">Route</span>::<span class="cs-fn">get</span>(<span class="cs-str">'/api/health'</span>, <span class="cs-kw">fn</span> () => <span class="cs-fn">response</span>()-><span class="cs-fn">json</span>([
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">9</span>
+              <span class="cs-indent">    </span><span class="cs-str">'status'</span> => <span class="cs-str">'ok'</span><span class="cs-op">,</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">10</span>
+              <span class="cs-indent">    </span><span class="cs-str">'stack'</span> => [<span class="cs-str">'PHP 8.2'</span>, <span class="cs-str">'Laravel 11'</span>, <span class="cs-str">'MySQL 8.0'</span>]
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">11</span>
+              <span class="cs-indent">  </span>])<span class="cs-op">;</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">12</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">13</span>
+              <span class="cs-cm">// app/Models/Project.php</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">14</span>
+              <span class="cs-kw">class</span> <span class="cs-cls">Project</span> <span class="cs-kw">extends</span> <span class="cs-cls">Model</span>
+            </div>
+            <div class="code-snip-line">
+              <span class="cs-ln">15</span>
+              <span class="cs-indent">  </span><span class="cs-kw">protected</span> <span class="cs-op">$</span><span class="cs-var">fillable</span> <span class="cs-op">=</span> [<span class="cs-str">'title'</span>, <span class="cs-str">'stack'</span>, <span class="cs-str">'status'</span>]<span class="cs-op">;</span>
+            </div>
+            <div class="code-snip-line cs-last">
+              <span class="cs-ln">16</span>
+              <span class="cs-cursor">▌</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span>Kaydır</span>
-      <div class="hero-scroll-line"></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee-inner">
+      <div class="marquee-track">
+        <span>PHP</span><span class="marquee-dot">●</span>
+        <span>Laravel</span><span class="marquee-dot">●</span>
+        <span>MySQL</span><span class="marquee-dot">●</span>
+        <span>JavaScript</span><span class="marquee-dot">●</span>
+        <span>TypeScript</span><span class="marquee-dot">●</span>
+        <span>React</span><span class="marquee-dot">●</span>
+        <span>Node.js</span><span class="marquee-dot">●</span>
+        <span>Python</span><span class="marquee-dot">●</span>
+        <span>TensorFlow</span><span class="marquee-dot">●</span>
+        <span>Docker</span><span class="marquee-dot">●</span>
+        <span>Linux</span><span class="marquee-dot">●</span>
+        <!-- Duplicate for seamless loop -->
+        <span>PHP</span><span class="marquee-dot">●</span>
+        <span>Laravel</span><span class="marquee-dot">●</span>
+        <span>MySQL</span><span class="marquee-dot">●</span>
+        <span>JavaScript</span><span class="marquee-dot">●</span>
+        <span>TypeScript</span><span class="marquee-dot">●</span>
+        <span>React</span><span class="marquee-dot">●</span>
+        <span>Node.js</span><span class="marquee-dot">●</span>
+        <span>Python</span><span class="marquee-dot">●</span>
+        <span>TensorFlow</span><span class="marquee-dot">●</span>
+        <span>Docker</span><span class="marquee-dot">●</span>
+        <span>Linux</span><span class="marquee-dot">●</span>
+      </div>
     </div>
   </section>
 
@@ -72,67 +191,107 @@
     <div class="container">
       <div class="section-header">
         <span class="section-number">01</span>
-        <h2 class="section-title">Hakkımda</h2>
+        <h2 class="section-title">About</h2>
+        <span class="section-subtitle">/ who i am</span>
       </div>
+
       <div class="about-grid">
         <div class="about-text">
+          <div class="about-avatar" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 12 3 20 7 20 17 12 21 4 17 4 7"/><circle cx="12" cy="12" r="3" fill="var(--accent)" fill-opacity="0.15" stroke="var(--accent)" stroke-width="1.2"/><path d="M12 9v6M9 12h6" stroke="var(--accent)" stroke-width="1" stroke-opacity="0.4"/></svg>
+            <div class="about-avatar-ring"></div>
+          </div>
           <p class="about-text-lead">
-            Merhaba, ben İrfan. Yazılım geliştirme benim için sadece bir iş değil — 
-            problem çözme sanatı. Karmaşık sorunları sade, çalışan çözümlere dönüştürmeyi seviyorum.
+            I'm a software engineer who likes shipping things that work. Real users, real edge cases, real production
+            feedback — that's where I learn the most.
           </p>
           <p>
-            Yapay zeka, makine öğrenmesi ve modern web teknolojileri üzerine çalışıyorum. 
-            Son zamanlarda fuzzy logic sistemleri, görüntü işleme ve kullanıcı odaklı 
-            üretkenlik araçları geliştirdim. Açık kaynağa inanıyor, öğrendiklerimi 
-            paylaşmayı önemsiyorum.
+            I'm currently a <strong>Software Engineering Intern at Miote</strong>, and I'm graduating soon from
+            my IT degree. On the side I build open-source tools (VerusPanel, VerusDB, RouteZero) and smaller
+            experiments in AI, data science, and productivity software. Most of my work lives on GitHub.
           </p>
           <p>
-            Sürekli öğrenme ve kendini geliştirme benim için bir yaşam biçimi. 
-            Yeni teknolojileri keşfetmek, mevcut bildiklerimi sorgulamak ve 
-            her projeden bir şey öğrenmek — bunlar beni motive eden şeyler.
+            My strongest area is the <strong>PHP / Laravel / MySQL</strong> stack — that's what I reach for when
+            I'm building something that needs to be reliable, boring in a good way, and ready for real users.
+            Outside of that, I work in JavaScript/TypeScript (React, Node.js), Python (for ML and scripting),
+            and I've shipped production code in every layer from the database to the UI.
+          </p>
+          <p>
+            I'm not a fan of over-engineering. I'd rather write 200 lines of clear code than 2,000 lines of
+            "framework-correct" code. The point of software is to be useful, not to win architecture astronaut
+            awards.
           </p>
         </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <span class="stat-number" data-count="9">0</span>
-            <span class="stat-label">Proje</span>
+        <div class="about-side">
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M12 2L2 7l.5 9.5L12 22l9.5-5.5L22 7z"/><path d="M12 7v9M7 12l5 3 5-3"/></svg>
+            </div>
+            <h3>Currently</h3>
+            <p>Software Engineering Intern at <strong>Miote</strong>. Final-year IT student. Open-sourcing tools on GitHub.</p>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">2025</span>
-            <span class="stat-label">İlk commit</span>
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>How I work</h3>
+            <p>Deep focus, small steps, ship often. Read the docs, write the tests, ask the dumb questions early.</p>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">%100</span>
-            <span class="stat-label">Merak</span>
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3>Open to</h3>
+            <p>Full-time roles after graduation, interesting freelance projects, OSS collaboration. Always up for a chat.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="skills">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
     <div class="container">
       <div class="section-header">
         <span class="section-number">02</span>
-        <h2 class="section-title">Yetenekler</h2>
+        <h2 class="section-title">Experience</h2>
+        <span class="section-subtitle">/ where I've worked</span>
       </div>
-      <div class="skills-content">
-        <p class="skills-intro">Çalıştığım teknolojiler ve araçlar — her biriyle gerçek projeler geliştirdim.</p>
-        <div class="skills-grid" id="skills-grid">
-          <!-- JS ile doldurulacak -->
-        </div>
+
+      <div class="experience-list" id="experience-list">
+        <!-- JS-rendered -->
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
+  <!-- STACK -->
+  <section id="stack" class="stack">
     <div class="container">
       <div class="section-header">
         <span class="section-number">03</span>
-        <h2 class="section-title">Projeler</h2>
+        <h2 class="section-title">Stack</h2>
+        <span class="section-subtitle">/ what I work with</span>
       </div>
+
+      <div class="stack-intro">
+        <p>Tools I've used in production or in serious projects — not just toy examples. My main stack is <strong>PHP / Laravel / MySQL</strong>; I add JavaScript, Python, and other tools around it as the problem demands.</p>
+      </div>
+
+      <div class="stack-categories" id="stack-categories">
+        <!-- JS-rendered -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Selected Work</h2>
+        <span class="section-subtitle">/ things I've built</span>
+      </div>
+
       <div class="filter-bar" id="filter-bar"></div>
       <div class="project-grid" id="project-grid"></div>
     </div>
@@ -142,28 +301,34 @@
   <section id="contact" class="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-number">04</span>
-        <h2 class="section-title">İletişim</h2>
+        <span class="section-number">05</span>
+        <h2 class="section-title">Get in touch</h2>
+        <span class="section-subtitle">/ say hi</span>
       </div>
+
       <div class="contact-wrap">
-        <div class="contact-text">
-          <p>
-            Bir projede birlikte çalışmak, bir fikri tartışmak ya da 
-            sadece merhaba demek için her zaman açığım.
+        <div class="contact-left">
+          <p class="contact-lead">
+            Whether it's a full-time role, a freelance project, OSS collaboration, or just a "hi" —
           </p>
-          <p>
-            Bana aşağıdaki kanallardan ulaşabilirsin — en hızlı yanıt 
-            e-posta ve GitHub üzerinden.
+          <h3 class="contact-cta-text">
+            <span>I'm always</span>
+            <span class="contact-cta-accent">happy to chat.</span>
+          </h3>
+          <p class="contact-desc">
+            Email is the fastest way to reach me. I'm also active on GitHub — open an issue, send a DM,
+            or comment on a thread. No formality required.
           </p>
         </div>
+
         <div class="contact-channels">
-          <a href="mailto:irfan@irfangunel.me" class="contact-card">
+          <a href="mailto:irfangunel4@gmail.com" class="contact-card">
             <div class="contact-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </div>
             <div>
-              <span class="contact-card-label">E-posta</span>
-              <span class="contact-card-value">irfan@irfangunel.me</span>
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">irfangunel4@gmail.com</span>
             </div>
             <svg class="contact-card-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -177,6 +342,25 @@
             </div>
             <svg class="contact-card-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
+          <a href="https://www.linkedin.com/in/irfangunl" class="contact-card" target="_blank" rel="noopener">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">in/irfangunl</span>
+            </div>
+            <svg class="contact-card-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <div class="contact-card contact-card--muted">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="contact-card-label">Based in</span>
+              <span class="contact-card-value">Mersin, Turkey</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -185,12 +369,45 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-inner">
-        <span class="footer-logo">i</span>
-        <p>© 2026 İrfan Günel · Sadece kod ve kahve</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <span class="footer-brand-name"><span>İrfan</span> Günel</span>
+          </div>
+          <p>Software engineer · Open-source maintainer</p>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Navigation</span>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#stack">Stack</a>
+          <a href="#work">Work</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Elsewhere</span>
+          <a href="https://github.com/irfangunl" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/irfangunl" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:irfangunel4@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 İrfan Günel</span>
+        <span class="footer-bottom-dot">·</span>
+        <span>Built with code and coffee.</span>
       </div>
     </div>
   </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
