@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İrfan Günel — developer</title>
+  <meta name="description" content="İrfan Günel'in kişisel portfolio sitesi. Yazılım, yapay zeka ve web projeleri.">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23b8956a'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%230c0c0c' font-family='Inter,sans-serif' font-weight='700'>i</text></svg>">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">İrfan Günel</a>
+      <div class="nav-links">
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menüyü aç/kapa" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-label">merhaba, ben</p>
+      <h1 class="hero-title">İrfan<br>Günel</h1>
+      <p class="hero-sub">Yazılım geliştirici · Yapay zeka meraklısı · Problem çözücü</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Projeleri İncele</a>
+        <a href="#contact" class="btn btn-outline">İletişim</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>aşağı kaydır</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <line x1="8" y1="4" x2="8" y2="16"/>
+        <polyline points="2,12 8,18 14,12"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-label">Hakkımda</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Merhaba! Ben İrfan. Yazılım geliştirme, yapay zeka ve web teknolojileriyle 
+            uğraşan bir geliştiriciyim. Projelerimde temiz kod, kullanıcı deneyimi 
+            ve özgün tasarım benim için ön planda.
+          </p>
+          <p>
+            Şu anda yapay zeka, veri bilimi ve modern web teknolojileri üzerine 
+            çalışıyorum. Açık kaynak projelere katkıda bulunmayı ve yeni şeyler 
+            öğrenmeyi seviyorum.
+          </p>
+        </div>
+        <div class="about-skills">
+          <h3>İlgi Alanlarım</h3>
+          <div class="skill-pills" id="skill-pills">
+            <!-- JS ile doldurulacak -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-label">Projeler</h2>
+      <div class="filter-bar" id="filter-bar">
+        <!-- JS ile doldurulacak -->
+      </div>
+      <div class="project-grid" id="project-grid">
+        <!-- JS ile doldurulacak -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-label">İletişim</h2>
+      <div class="contact-content">
+        <p class="contact-text">
+          Bir projede birlikte çalışmak, bir fikri konuşmak ya da sadece 
+          merhaba demek istersen — her zaman açığım.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/irfangunl" class="contact-link" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="mailto:irfan@irfangunel.me" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            irfan@irfangunel.me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 İrfan Günel. Sade ve özgün.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

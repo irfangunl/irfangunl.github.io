@@ -1,0 +1,83 @@
+[
+  {
+    "id": "portfolio",
+    "title": "irfangunel.me",
+    "description": "Kişisel portfolio sitesi. JSON tabanlı içerik yönetimi, özgün karanlık tema, scroll animasyonları.",
+    "tags": ["frontend", "portfolio"],
+    "url": "https://github.com/irfangunl/irfangunl.github.io",
+    "image": "",
+    "year": 2026
+  },
+  {
+    "id": "routezero",
+    "title": "RouteZero",
+    "description": "Harita tabanlı bir rota planlama uygulaması. Kullanıcıların noktalar arası optimum rotaları hesaplamasını sağlar.",
+    "tags": ["frontend", "maps"],
+    "url": "https://github.com/irfangunl/routezero",
+    "image": "",
+    "year": 2026
+  },
+  {
+    "id": "carparking",
+    "title": "CarParking Fuzzy",
+    "description": "Fuzzy logic kullanarak otopark yeri tahmini yapan sistem. Bulanık mantık ile park yeri doluluk oranı hesaplama.",
+    "tags": ["ai", "ml"],
+    "url": "https://github.com/irfangunl/carparking-fuzzy",
+    "image": "",
+    "year": 2026
+  },
+  {
+    "id": "customer-churn",
+    "title": "Customer Churn Analizi",
+    "description": "Müşteri kaybı tahmin modeli. Makine öğrenmesi ile müşteri davranışlarını analiz eden bir proje.",
+    "tags": ["ai", "ml", "data"],
+    "url": "https://github.com/irfangunl/customer-churn",
+    "image": "",
+    "year": 2026
+  },
+  {
+    "id": "eyedisaster",
+    "title": "EyeDisaster",
+    "description": "Afet yönetimi için göz izleme tabanlı bir arayüz. Acil durumlarda alternatif kontrol mekanizması.",
+    "tags": ["ai", "frontend"],
+    "url": "https://github.com/irfangunl/eyedisaster",
+    "image": "",
+    "year": 2026
+  },
+  {
+    "id": "ai-detection",
+    "title": "AI Image Detection",
+    "description": "Yapay zeka ile görüntü tespit ve sınıflandırma sistemi. Derin öğrenme modelleri ile nesne tanıma.",
+    "tags": ["ai", "ml", "data"],
+    "url": "https://github.com/irfangunl/ai-image-detection",
+    "image": "",
+    "year": 2026
+  },
+  {
+    "id": "verusdb",
+    "title": "VerusDB",
+    "description": "Veritabanı yönetim ve optimizasyon aracı. Performans izleme ve sorgu optimizasyonu için geliştirilmiş bir sistem.",
+    "tags": ["backend", "database"],
+    "url": "https://github.com/irfangunl/verusdb",
+    "image": "",
+    "year": 2025
+  },
+  {
+    "id": "verustodo",
+    "title": "VerusTodo",
+    "description": "Minimalist ve hızlı bir todo uygulaması. Yerel depolama ile çalışan, sade ama güçlü bir görev yöneticisi.",
+    "tags": ["frontend", "productivity"],
+    "url": "https://github.com/irfangunl/VerusTodo",
+    "image": "",
+    "year": 2025
+  },
+  {
+    "id": "pomodoro",
+    "title": "Pomodoro Todo",
+    "description": "Pomodoro tekniği ile yapılacaklar listesini birleştiren üretkenlik uygulaması. Zaman yönetimi için bütünleşik çözüm.",
+    "tags": ["frontend", "productivity"],
+    "url": "https://github.com/irfangunl/pomodoro-todo",
+    "image": "",
+    "year": 2025
+  }
+]
